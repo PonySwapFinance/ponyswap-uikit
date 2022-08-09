@@ -18,7 +18,8 @@ const Wrapper = styled.div`
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
-  top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
+  // top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
+  top: 0;
   left: 0;
   transition: top 0.2s;
   display: flex;
@@ -32,6 +33,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   border-bottom: solid 2px rgba(133, 133, 133, 0.11);
   z-index: 20;
   transform: translate3d(0, 0, 0);
+
+  background-color: rgba(0,0,0,0.25);
 `;
 
 const BodyWrapper = styled.div`

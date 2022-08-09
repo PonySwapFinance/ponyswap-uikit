@@ -23,8 +23,12 @@ const Container = styled.div`
   padding: 8px 4px;
   //background-color: ${({ theme }) => theme.nav.background};
   // border-top: solid 2px rgba(133, 133, 133, 0.1);
-  background-color: rgba(0,0,0,0.25) !important;
+  background-color: rgba(0,0,0,0.0) !important;
   border-top: none !important;
+  position: absolute;
+  bottom: 64px;
+  left: 0;
+  width: 100%;
 `;
 
 const PriceLink = styled.a`

@@ -2379,7 +2379,7 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 Icons$1.MoonIcon; Icons$1.SunIcon; Icons$1.LanguageIcon;
-var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  //background-color: ", ";\n  // border-top: solid 2px rgba(133, 133, 133, 0.1);\n  background-color: rgba(0,0,0,0.25) !important;\n  border-top: none !important;\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  //background-color: ", ";\n  // border-top: solid 2px rgba(133, 133, 133, 0.1);\n  background-color: rgba(0,0,0,0.25) !important;\n  border-top: none !important;\n"])), function (_a) {
+var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  //background-color: ", ";\n  // border-top: solid 2px rgba(133, 133, 133, 0.1);\n  background-color: rgba(0,0,0,0.0) !important;\n  border-top: none !important;\n  position: absolute;\n  bottom: 64px;\n  left: 0;\n  width: 100%;\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  //background-color: ", ";\n  // border-top: solid 2px rgba(133, 133, 133, 0.1);\n  background-color: rgba(0,0,0,0.0) !important;\n  border-top: none !important;\n  position: absolute;\n  bottom: 64px;\n  left: 0;\n  width: 100%;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });

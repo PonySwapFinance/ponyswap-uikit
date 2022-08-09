@@ -21,8 +21,10 @@ const { MoonIcon, SunIcon, LanguageIcon } = Icons;
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: ${({ theme }) => theme.nav.background};
-  border-top: solid 2px rgba(133, 133, 133, 0.1);
+  //background-color: ${({ theme }) => theme.nav.background};
+  // border-top: solid 2px rgba(133, 133, 133, 0.1);
+  background-color: rgba(0,0,0,0.25) !important;
+  border-top: none !important;
 `;
 
 const PriceLink = styled.a`
@@ -110,37 +112,6 @@ const PanelFooter: React.FC<Props> = ({
           })}
         </Flex>
       </SocialEntry>
-      <SettingsEntry>
-        {/* <Button variant="text" onClick={() => toggleTheme(!isDark)}>
-          <Flex alignItems="center">
-            <SunIcon color={isDark ? "textDisabled" : "text"} width="24px" />
-            <Text color="textDisabled" mx="4px">
-              /
-            </Text>
-            <MoonIcon color={isDark ? "text" : "textDisabled"} width="24px" />
-          </Flex>
-        </Button>*/}
-        <Dropdown
-          position="top-right"
-          target={
-            <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
-              <Text color="textSubtle">{currentLang?.toUpperCase()}</Text>
-            </Button>
-          }
-        >
-          {langs.map((lang) => (
-            <MenuButton
-              key={lang.code}
-              fullWidth
-              onClick={() => setLang(lang)}
-              // Safari fix
-              style={{ minHeight: "32px", height: "auto" }}
-            >
-              {lang.language}
-            </MenuButton>
-          ))}
-        </Dropdown>
-      </SettingsEntry>
     </Container>
   );
 };

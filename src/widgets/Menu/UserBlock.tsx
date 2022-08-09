@@ -16,6 +16,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
     <div>
       {account ? (
         <Button
+          className="pns-button connected-button"
           size="sm"
           variant="tertiary"
           onClick={() => {
@@ -26,6 +27,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
         </Button>
       ) : (
         <Button
+          className="pns-button connect-button"
           size="sm"
           onClick={() => {
             onPresentConnectModal();

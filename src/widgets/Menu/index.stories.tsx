@@ -24,7 +24,7 @@ export const Connected: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark={true}
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
@@ -94,7 +94,7 @@ export const WithNoProfile: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark={true}
         toggleTheme={noop}
         langs={langs}
         setLang={noop}
@@ -136,7 +136,7 @@ export const WithProfile: React.FC = () => {
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
         logout={noop}
-        isDark={false}
+        isDark={true}
         toggleTheme={noop}
         langs={langs}
         setLang={noop}

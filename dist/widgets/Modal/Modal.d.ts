@@ -5,6 +5,7 @@ interface Props extends InjectedProps {
     hideCloseButton?: boolean;
     onBack?: () => void;
     bodyPadding?: string;
+    className?: string;
 }
 declare const Modal: React.FC<Props>;
 export default Modal;

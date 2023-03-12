@@ -28,3 +28,4 @@ export { default as EggHouseIcon } from "./EggHouse";
 export { default as ShoeIcon } from "./Shoe";
 export { default as StableIcon } from "./Stable";
 export { default as RanchIcon } from "./Ranch";
+export { default as HomeLogo } from "./HomeLogo";

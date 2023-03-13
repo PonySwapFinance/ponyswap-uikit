@@ -30,3 +30,5 @@ export { default as StableIcon } from "./Stable";
 export { default as RanchIcon } from "./Ranch";
 export { default as HomeLogo } from "./HomeLogo";
 export { default as NewTradeIcon } from "./NewTradeIcon";
+export { default as GithubIcon } from "./Github";
+export { default as DocsIcon } from "./Docs";

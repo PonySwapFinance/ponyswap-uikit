@@ -34,3 +34,4 @@ export { default as GithubIcon } from "./Github";
 export { default as DocsIcon } from "./Docs";
 export { default as CommunityIcon } from "./Community";
 export { default as PonyPotIcon } from "./PonyPot";
+export { default as LockerIcon } from './Locker';

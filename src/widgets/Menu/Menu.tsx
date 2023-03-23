@@ -116,8 +116,8 @@ const Menu: React.FC<NavProps> = ({
   const homeLink = links.find((link) => link.label === "Home");
 
   return (
-    <Wrapper>
-      <StyledNav showMenu={showMenu}>
+    <Wrapper className="pony-menu-wrapper">
+      <StyledNav className="pony-menu" showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}

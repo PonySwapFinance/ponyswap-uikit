@@ -2447,7 +2447,7 @@ var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeT
 });
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
-    return (React.createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
+    return (React.createElement(StyledPanel, { className: "pony-menu-panel", isPushed: isPushed, showMenu: showMenu },
         React.createElement(PanelBody, __assign({}, props)),
         React.createElement(PanelFooter, __assign({}, props))));
 };
@@ -2748,8 +2748,8 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
-    return (React.createElement(Wrapper$1, null,
-        React.createElement(StyledNav, { showMenu: showMenu },
+    return (React.createElement(Wrapper$1, { className: "pony-menu-wrapper" },
+        React.createElement(StyledNav, { className: "pony-menu", showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(Flex, null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),

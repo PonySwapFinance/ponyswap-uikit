@@ -34,7 +34,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 
-  background-color: rgba(0,0,0,0.25) !important;
+  background-color: rgba(0,0,0,0.25);
   border: none !important;
 
   top: 64px;
